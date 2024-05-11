@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: orange;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 70px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: orange;
+}
+
+tr :hover {
+    background-color: black;
+    color: white;
+ }
+
+.btn {
+    background-color: white;
+    border: orange;
+}
+
+.btn input {
+    position: absolute;
+    border-radius: 25px;
+    margin-top: 5px;
+    height: 30px;
+    box-shadow: 0px 2px 4px rgba(0.2,0.2,0.2,0.2);
+   border-bottom: orange;
+   border-top: orange;
+   border-right: orange;
+   border-left: orange;
+   border: orange;
+}
+
