@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Log-in</title>
+        <link rel="stylesheet" href="/css/reg.css">
+    </head>
+    <body>
+        <header>
+            <h2 class="logo">Web Dev </h2> 
+            <nav class="navigation">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <div class="form-box">
+                <h1>Sign-up</h1>
+                <form id="registrationForm" action="">
+                    <div class="input-box">
+                        <input type="text" name="First_name" required>
+                        <label>First_name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="Middle_name" required>
+                        <label>Middle_name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="Last_name" required>
+                        <label>Last_name</label>
+                    </div>
+                    <div class="dob">
+                        <input type="date" name="DOB">
+                        <label>DOB</label>
+                    </div>
+                    <div class="gender"> 
+                        <label>Gender</label>
+                        <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="role">
+                        <lable>Role</lable>
+                        <select name="role" required>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required>
+                        <label>email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="Phone_number" required>
+                        <label>Phone_number</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login">
+                        <p>Already register <a href="tran.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="/js/reg.js"></script>
+    </body>
+</html>
