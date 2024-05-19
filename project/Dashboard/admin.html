@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>school admin dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Month',  'Female',  'Male',  'Average'],
+          ['2004/05',    938,             998,                954.6],
+          ['2005/06',    1120,            1268,               1182],
+          ['2006/07',    1167,             807,                923],
+          ['2007/08',    1110,              968,                1009.4],
+          ['2008/09',     691,             1026,                869.6]
+        ]);
+
+        var options = {
+          title : 'Monthly school performance',
+          vAxis: {title: 'rate'},
+          hAxis: {title: 'Month'},
+          seriesType: 'bars',
+          series: {3: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <link href="admin.css" rel="stylesheet">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['schedule management',     11],
+          ['sport activity',      2],
+          ['student management',  2],
+          ['extra curriculum activity', 2],
+          ['stuff managment',    7]
+        ]);
+
+        var options = {
+          title: 'Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="leftcontent">
+      <form><div  class="search" >
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input  class="search-input" type="search" placeholder="Search">
+      </div></form>
+      <div class="list">
+	<div class="circle">
+	  <div class="cir1"><img src="calendar.jpg"></div>
+	  <div class="cir2"><img src="management.jpg"></div>
+	  <div class="cir3"><img src="studentmanagement.jpg"></div>
+          <div class="cir4"><img src="announcement3.jpg"></div>
+        </div>
+        <div class="rectangle">
+	  <div class="calender">Calender</div>
+	  <div class="teacherManagement"><a href="/Project/Public/teacher.html">Teacher Management</a></div>
+	  <div class="studentManagement"><a href="/Project/Public/student.html">Student Management</a></div>
+	  <div class="announcement"><a href=""> Make Announcement</a></div>
+        </div>
+       </div>
+      </div>
+    <div class="rightcontent">
+      <div class="heading">
+	 <div class="heading1">
+ 	<div id="home" class="home">Home</div>
+	<div class="photoid">
+	  <div class="userPhoto"></div>
+	  <div class="fullid">
+	     <div class="full">Full Name</div>
+	     <div class="id">Id Number</div>
+	   </div>
+	   </div>
+	  </div>
+	</div>
+    <div class="rightBox">
+       <div class="row1">
+	  <div class="circle2" id="piechart_3d" ></div>
+	  <div class="circle3" id="chart_div" ></div>
+	</div>
+       <div class="row2">
+	   <div id="calender2" class="calender2"><img src="calendar.jpg"></div>
+	   <div id="teacher" class="teacher"><img src="management.jpg"></div>
+	</div>
+	<div class="row3">
+	   <div id="student" class="student"><img src="studentmanagement.jpg"></div>
+	   <div id="announce"class="announce"><img src="announcement3.jpg"></div> 
+	</div>
+     </div>
+     <script src="admin.js"></script>
+  </body>
+</html>
