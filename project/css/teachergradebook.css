@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:color;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: orange;
+    color:black;
+}
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+tr:hover {
+    background-color: #555 ;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+select {
+    padding: 5px;
+    margin: 5px;
+}
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .avatar {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .avatar {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    table {
+        width: 90%;
+        margin: 20px auto;
+    }
+    th, td {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    table {
+        width: 85%;
+        margin: 20px auto;
+    }
+    th, td {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+    table {
+        width: 80%;
+        margin: 20px auto;
+    }
+    th, td {
+        font-size: 18px;
+        padding: 12px;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 1441px) {
+    table {
+        width: 75%;
+        margin: 20px auto;
+    }
+    th, td {
+        font-size: 20px;
+        padding: 14px;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
