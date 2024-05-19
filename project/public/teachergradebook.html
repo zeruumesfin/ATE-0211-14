@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student GradeBook</title>
+<link rel="stylesheet" href="/Project/css/teachergradebook.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gradebook</h1>
+        <form>
+            <form onsubmit="return validateForm()">
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option value="semester 1">semester 1</option>
+                <option value="semester2">Semester 2</option>
+            </select>
+            <label for="subject">subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="Math">Math</option>
+                        <option value="Science">Science</option>
+                        <option value="History">History</option>
+                        <option value="English">English</option>
+                    </select>
+        </form>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Assignment 1</th>
+                <th>Assignment 2</th>
+                <th>Assignment 3</th>
+                <th>Midterm Exam</th>
+                <th>Final Exam</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="avatar">BP</div> Brad Pitt
+                </td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+                <td>87</td>
+                <td>85</td>
+                <td>435</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="avatar">CR</div> Chris Rock
+                </td>
+                <td>67</td>
+                <td>87</td>
+                <td>98</td>
+                <td>93</td>
+                <td>77</td>
+                <td>422</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="avatar">DB</div> David Beckham
+                </td>
+                <td>66</td>
+                <td>76</td>
+                <td>86</td>
+                <td>96</td>
+                <td>56</td>
+                <td>380</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="avatar">HG</div>  Hlina Girum
+                </td>
+                <td>55</td>
+                <td>65</td>
+                <td>74</td>
+                <td>85</td>
+                <td>95</td>
+                <td>374</td>
+            <tr>
+                <td>
+                    <div class="avatar">MS</div>MR smith
+                </td>
+                <td>87</td>
+                <td>59</td>
+                <td>92</td>
+                <td>62</td>
+                <td>88</td>
+                <td>388</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="avatar">MS</div> MRS smith
+                </td>
+                <td>88</td>
+                <td>98</td>
+                <td>70</td>
+                <td>83</td>
+                <td>45</td>
+                <td>384</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="avatar">YM</div> Yabsera Mesfin
+                </td>
+                <td>59</td>
+                <td>69</td>
+                <td>79</td>
+                <td>89</td>
+                <td>99</td>
+                <td>395</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="avatar">ZM</div> Zerubabel Mesfin
+                </td>
+                <td>67</td>
+                <td>77</td>
+                <td>87</td>
+                <td>97</td>
+                <td>57</td>
+                <td>385</td>
+    </tr>
+            </tr>
+           
+        </tbody>
+    </table>
+    <footer>
+        <p>&copy; 2024 Gradebook. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

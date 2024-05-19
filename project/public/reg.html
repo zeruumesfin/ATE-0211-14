@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/Project/css/reg.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Web Dev</h2> 
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="form-box">
+            <h1>Sign-up</h1>
+            <form id="registrationForm" action="">
+                <div class="input-box">
+                    <input type="text" id="firstName" name="First_name" placeholder="First Name" required>
+                    <span class="error" id="firstNameError"></span>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="middleName" name="Middle_name" placeholder="Middle Name" required>
+                    <span class="error" id="middleNameError"></span>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="lastName" name="Last_name" placeholder="Last Name" required>
+                    <span class="error" id="lastNameError"></span>
+                </div>
+                <div class="dob">
+                    <input type="date" id="dob" name="DOB" required>
+                    <span class="error" id="dobError"></span>
+                </div>
+                <div class="gender"> 
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <span class="error" id="genderError"></span>
+                </div>
+                <div class="role">
+                    <label for="role">Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                    <span class="error" id="roleError"></span>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="input-box">
+                    <input type="tel" id="phone" name="Phone_number" placeholder="Phone Number" required>
+                    <span class="error" id="phoneError"></span>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login">
+                    <p>Already registered? <a href="tran.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/Project/js/reg.js"></script>
+</body>
+</html>
